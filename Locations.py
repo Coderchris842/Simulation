@@ -1,5 +1,6 @@
 import People
 # Model of place
+places = {}
 class place:
     name = "void"
     # What places are nearby = close
@@ -23,6 +24,7 @@ class place:
         self.close2 = close2
         self.close3 = close3
         self.close4 = close4
+        places[self.name] = self
                 
 Void = place("void", "void", "void", "void", "void")
 Void.checkpop()

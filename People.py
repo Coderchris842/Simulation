@@ -1,4 +1,3 @@
-import Locations
 import Worldtime
 # pop is how many peeps are in the universe
 pop = {}
