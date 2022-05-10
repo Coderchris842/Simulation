@@ -1,4 +1,6 @@
 import time
+import People
+import Locations
 # Keeps track of time (duh)
 class meas:
     # Measures each unit of time and conversions
@@ -20,6 +22,10 @@ class meas:
 # Pushes time forward (only forward) by units
 def second():
     time.sleep(0.05)
+    tedpop = list(People.pop)
+    for i in tedpop:
+        People.pop[i].abstract.grow()
+        
     meas.intime+=1
 def minute():
     for i in range(30):
